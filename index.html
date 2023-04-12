@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Counter-app</title>
+</head>
+<body>
+    
+    <!-- big div -->
+    <div class=" w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#344151] gap-10">
+        
+        <!-- increament and decrement div -->
+        <div class="text-[#0398d4] font-medium text-[20px]"> 
+            Increament and Decreament
+        </div>
+
+        <!-- button div -->
+        <div class="bg-white flex text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5">
+            <!-- Negative button -->
+            <!-- onclick ak only button ka ak event hota hai jaise ap button per click krte hai vaise ye vo fn call ho jaiga -->
+
+            <button onclick="decreament()" class="border-r-2 border-[#bfbfbf] pr-5">
+               <!-- <i class="fa-solid fa-minus"></i> -->
+               <h1 class="font-bold">-</h1>
+            </button>
+
+            <!-- content number wala -->
+            <div id="counter" class="font-bold">
+                0
+            </div>
+
+            <!-- positive button -->
+            <button onclick="increament()" class="border-l-2 border-[#bfbfbf] pl-5">
+                <!-- <i class="fa-solid fa-plus"></i> -->
+               <h1 class="font-bold">+</h1>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- icons ke liye hmne font ossam ko include kraya using js -->
+     <!-- <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script> -->
+
+    <!-- js file addition -->
+    <script src="index.js"></script>
+</body>
+</html>
